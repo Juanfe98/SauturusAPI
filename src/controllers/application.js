@@ -25,10 +25,8 @@ async function sendEmail(destination='', subject='', content=''){
   transporter.sendMail(mailData, function (err, info) {
     if(err){
       console.log('Error --> ',err)
-      return false;
     }else{
       console.log(info);
-      return true;
     }
   });
 }

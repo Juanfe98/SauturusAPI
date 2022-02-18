@@ -28,4 +28,4 @@ const clientSchema = new mongoose.Schema(
 )
 
 // When the model exist we dont need to created again
-export default mongoose.models.Client || mongoose.model('Client', clientSchema);
+module.exports = mongoose.models.Client || mongoose.model('Client', clientSchema);
