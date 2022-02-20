@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+      "module": "commonjs",
+      "target": "es5",
+      "esModuleInterop": true,
+      "noImplicitAny": false,
+      "moduleResolution": "node",
+      "sourceMap": true,
+      "outDir": "dist",
+      "baseUrl": ".",
+      "noUnusedParameters": true,
+      "noFallthroughCasesInSwitch": true,
+      "allowSyntheticDefaultImports": true,
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "resolveJsonModule": true,
+    //   "types": ["node", "express","socket.io"],
+      "plugins": [
+        {
+          "name": "typescript-tslint-plugin",
+          "alwaysShowRuleFailuresAsWarnings": false,
+          "ignoreDefinitionFiles": true,
+          "configFile": "./tslint.json",
+          "suppressWhileTypeErrorsPresent": false
+        }
+      ],
+      "paths": {
+          "*": [
+              "node_modules/*"
+          ]
+      }
+  },
+  "include": [
+      "src/**/*"
+  ]
+}
