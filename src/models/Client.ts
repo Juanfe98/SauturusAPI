@@ -2,6 +2,7 @@ import * as mongoose from 'mongoose';
 import { Document, Model } from "mongoose";
 
 export interface Client {
+    _id?:string,
     name?:string;
     email?:string;
     phone?:string;
@@ -20,8 +21,8 @@ export type IClient = Client | Document;
 // }
 
 const Schema = mongoose.Schema;
-const UserSchema = new Schema({
-  name: {
+const ClientSchema = new Schema({
+name: {
     type: String,
     required: true,
   },
@@ -47,5 +48,5 @@ const UserSchema = new Schema({
   timestamps: true,
   versionKey: false,
 });
-export default mongoose.model<IClient>('Client', UserSchema);
+export default mongoose.model<IClient>('Client', ClientSchema);
 
