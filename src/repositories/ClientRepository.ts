@@ -16,7 +16,7 @@ class ClientRepository implements IClientRepository {
     }
   }
 
-  async addClient(clientData: Client): Promise<Client> {
+  async add(clientData: Client): Promise<Client> {
     try {
       const newClient = new ClientDB(clientData);
       const savedClient = await newClient.save();

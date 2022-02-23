@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js",
+    "dev2": "nodemon src/app.ts",
     "start": "node .",
     "start:dev": "webpack --config webpack.config.ts",
     "run:dev": "nodemon build/app.js",
@@ -24,6 +25,7 @@
     "@types/mongoose": "^5.11.97",
     "@types/morgan": "^1.9.3",
     "@types/multer": "^1.4.3",
+    "@types/nodemailer": "^6.4.4",
     "body-parser": "^1.19.2",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",

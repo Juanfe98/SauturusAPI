@@ -11,8 +11,8 @@ class ClientController {
     return res.json(result);
   }
 
-  async addClient(_req: Request, res: Response) {
-    const result = await this.clientService.addClient({ 
+  async add(_req: Request, res: Response) {
+    const result = await this.clientService.add({ 
       "name": "Juan Montaña",
       "email": "juanmontana1398@gmail.com",
       "phone": "3112456789",

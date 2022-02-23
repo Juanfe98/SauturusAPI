@@ -17,7 +17,7 @@ const main = async () => {
   _dataBaseConnector.connectSuccesfully();
 
   app.get("/clients", (req, res) => _clientController.getAllClients(req, res));
-  app.get("/clients/addClient", (req, res) => _clientController.addClient(req, res));
+  app.get("/clients/addClient", (req, res) => _clientController.add(req, res));
 
   const port = process.env.PORT || 5000;
   app.listen(port, () => {
